@@ -1,0 +1,9 @@
+:root {
+    --primary-color: #007bff; /* Azul */
+    --secondary-color: #6c757d; /* Gris */
+    --accent-color: #ffc107; /* Amarillo */
+    --back-light1: #1cfcfc;
+    --back-light2: #24fbfc;
+    --back-med: #0c6c7c;
+    --back-dark: #019797;
+  }

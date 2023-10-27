@@ -1,11 +1,3 @@
-/*
-  Rui Santos
-  Complete project details at https://RandomNerdTutorials.com/esp32-mpu-6050-web-server/
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 let scene, camera, rendered, cube;
 
 function parentWidth(elem) {
@@ -22,8 +14,8 @@ function init3D(){
 
   camera = new THREE.PerspectiveCamera(75, parentWidth(document.getElementById("3Dcube")) / parentHeight(document.getElementById("3Dcube")), 0.1, 1000);
 
-  renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(parentWidth(document.getElementById("3Dcube")), parentHeight(document.getElementById("3Dcube")));
+  rendered = new THREE.WebGLRenderer({ antialias: true });
+  rendered.setSize(parentWidth(document.getElementById("3Dcube")), parentHeight(document.getElementById("3Dcube")));
 
   document.getElementById('3Dcube').appendChild(renderer.domElement);
 
